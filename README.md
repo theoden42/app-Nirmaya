@@ -1,4 +1,4 @@
-#Niramaya
+# Niramaya
 ## Created for [Comfest 2020](http://www.comfest.in)
 ###### Developed by :
 * Divyansh Tripathi: @theoden42
