@@ -3,7 +3,7 @@
 ###### Developed by :
 * Divyansh Tripathi: @theoden42
 * Adarsh Kumar
-Features:
+###### Features:
 1. Personalised BMI opinion.
 2. Personalised Calorie Determination
 3. ~~Meditation Planning~~
