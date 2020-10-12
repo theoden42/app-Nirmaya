@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Niramaya</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="genders">
+        <item>Guy</item>
+        <item>Gal</item>
+        <item>Non Binary Pal</item>
+    </string-array>
+    <string name="caution">"Before planning a weight-gain or weight-loss diet, please consult your
+        doctor. Click to view physicians near you in Kanpur."
+    </string>
+    <string name="title_BMI">"Body Mass Index</string>
+    <string name="what_is_bmi">"BMI is a quick and easy way to find if you have a healthy weight or if you should try to burn some calories ^w^"
+    </string>
+    <string name="Normal">"Great! Your BMI indicates you have a healthy weight."</string>
+    <string name="Overweight">"Oh No! Your BMI indicates you have a little more weight than expected! Don't worry, just a few calories to burn ^_^"
+    </string>
+    <string name="Obese">"Oh No! You have an unhealthy weight, please consult your doctor and plan a diet as given next. You have got this!"</string>
+    <string name="Severe_Underweight">"Oh no! You have dangerously low weight.! Please consult your doctor and plan a diet  as given next. You have got this!"</string>
+    <string name="Calories">"An important part of a healthy lifestyle is to consider how much calories and nutrients you must consume. Click here to view what nutrients you should consume"
+    </string>
+    <string name="Underweight">"Oh No! You have a slightly lower weight than expected! Don't worry that means more food to eat ^_^" </string>
+    <string name="diet_help">"Planning a healthy and tasty meal can be a challenging task.Need help planning an Indian diet? Click here to view some meal options and their attributes."</string>
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/gradient"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIRAMAYA"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/saman"
+                android:textSize="50sp"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:id="@+id/profilepicture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/usersymbolguy"
+                android:transitionName="profiletrans" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/profilepicture"
+                android:fontFamily="@font/aclonica"
+                android:text="Leonardo Di Caprio"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/profilepicture"
+                android:fontFamily="@font/aclonica"
+                android:text="Age: 31 Years"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/age"
+                android:fontFamily="@font/aclonica"
+                android:text="Male"
+                android:textAlignment="textEnd"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/age"
+                android:layout_alignLeft="@+id/age"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Wt: 100Kg"
+                android:textAlignment="textEnd"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/height"
+                android:fontFamily="@font/aclonica"
+                android:text="Ht: 184cm"
+                android:textAlignment="textEnd"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:padding="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardbmi"
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:longClickable="true"
+                    android:onClick="bmiView"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/bmi_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bmi_image" />
+
+                    <TextView
+                        android:id="@+id/bmi_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bmi_image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="23.4"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bmi_label"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="BMI"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/caloriecard"
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="caloriesView"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/calorie_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/calorieimage" />
+
+                    <TextView
+                        android:id="@+id/calorie_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/calorie_image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="2200"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/calorie_label"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="KCal"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:padding="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:cardBackgroundColor="#0C2D48"
+                app:cardElevation="10dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/updatecard"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="updateProfile"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/bmi_image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/updateicon" />
+
+                    <TextView
+                        android:id="@+id/bmi_label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bmi_image2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="Update"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/bmi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bmi_label2"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="info"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#0C2D48"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="dietView"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/calorie_image2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/calorieimage" />
+
+                    <TextView
+                        android:id="@+id/calorie_label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/calorie_image2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/aclonica"
+                        android:textAlignment="center"
+                        android:includeFontPadding="false"
+                        android:text="Meal Ideas"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/calories2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/calorie_label2"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aclonica"
+                        android:includeFontPadding="false"
+                        android:text="Chose yours"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
